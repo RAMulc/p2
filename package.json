@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RAMulc/p2/issues"
   },
-  "homepage": "https://github.com/RAMulc/p2#readme"
+  "homepage": "https://github.com/RAMulc/p2#readme",
+  "dependencies": {
+    "eslint": "^7.14.0"
+  }
 }
