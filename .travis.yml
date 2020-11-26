@@ -4,6 +4,7 @@ branches:
   only:
     - master
     - main
+    - newbranch
 cache:
   directories:
     - node_modules

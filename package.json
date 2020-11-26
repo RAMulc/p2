@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run lint",
     "start": "node index.js",
-    "lint": "eslint '**/*.js'",
+    "lint": "eslint **/*.js",
     "fix": "eslint --fix ."
   },
   "repository": {
@@ -19,8 +19,12 @@
     "url": "https://github.com/RAMulc/p2/issues"
   },
   "homepage": "https://github.com/RAMulc/p2#readme",
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^2.2.0"
+  },
   "devDependencies": {
-    "eslint": "^7.14.0"
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
