@@ -5,6 +5,7 @@ branches:
     - master
     - main
     - newbranch
+    - handlebars-partials
 cache:
   directories:
     - node_modules
