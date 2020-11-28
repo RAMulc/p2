@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/RAMulc/p2#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5",
     "prettier": "^2.2.0"
   },
   "devDependencies": {
