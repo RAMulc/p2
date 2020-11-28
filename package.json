@@ -1,0 +1,30 @@
+{
+  "name": "p2",
+  "version": "1.0.0",
+  "description": "Project2",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAMulc/p2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAMulc/p2/issues"
+  },
+  "homepage": "https://github.com/RAMulc/p2#readme",
+  "dependencies": {
+    "prettier": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
