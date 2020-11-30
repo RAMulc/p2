@@ -42,5 +42,3 @@ db.sequelize.sync({ force: true }).then(() => {
     console.log(`App listening on PORT ${PORT}`);
   });
 });
-
-// Import routes and give the server access to them.
