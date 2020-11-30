@@ -11,6 +11,12 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+// Set Handlebars.
+const exphbs = require('express-handlebars');
+
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+
 // Requiring our models for syncing
 const db = require('./models');
 
@@ -25,6 +31,9 @@ app.use(express.static('public'));
 // =============================================================
 // require('./routes/api-routes.js')(app);
 // require('./routes/html-routes.js')(app);
+// var routes = require("./controllers/burgers_controller.js");
+
+// app.use(routes);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
@@ -33,3 +42,5 @@ db.sequelize.sync({ force: true }).then(() => {
     console.log(`App listening on PORT ${PORT}`);
   });
 });
+
+// Import routes and give the server access to them.
