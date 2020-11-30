@@ -1,0 +1,21 @@
+<div class="pure-u-1-3"><p>Add your own recipe</p></div>
+
+<form class="pure-form" method="POST">
+    <fieldset>
+        <label for="recipe-name">Name of Your Recipe</label>
+        <input type="text" id="recipe-name" name="recipe-name" placeholder="Fettuccini Alfredo"/>
+        <label for="amount[0]">Amount</label>
+        <input type="text" id="amount0" name="a_level[+i][0]" placeholder="1/4, half"/>
+
+        <label for="ingred[0]">Ingredient Name</label>
+        <input type="text" name="a_level[+i][2]" class="form-control ingredCol" id="ingred0" placeholder="flour, salt"/>
+        <label for="amount[0]">Amount</label>
+        <input type="text" id="amount0" name="a_level[+i][0]" placeholder="1/4, half"/>
+        <label for="add-button">Add Item</label>
+        <button type="submit" class="pure-button pure-button-primary"id="addButton" onclick="createNewRow(event) "> Add </button>
+    
+        <label for="instructions">Instructions</label>
+        <textarea type="text" id="instructions" placeholder="1. Mix dry and wet ingredients."></textarea>
+        <button type="submit" class="pure-button pure-button-primary" id="recipe-submit" >Submit</button>
+    </fieldset>
+</form>
