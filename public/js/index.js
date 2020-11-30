@@ -1,5 +1,13 @@
-function sumit(a, b) {
-  return a + b;
-}
+$(() => {
+  // Close Welcome Screen and Open Login Screen
+  $('#loginButton').on('click', (event) => {
+    $('#welcomeScreen').css('display', 'none');
+    $('#loginScreen').css('display', 'inline');
+  });
 
-console.log(sumit(1, 2));
+  // Close Welcome Screen and Open Sign Up Screen
+  $('#signupButton').on('click', (event) => {
+    $('#welcomeScreen').css('display', 'none');
+    $('#signupScreen').css('display', 'inline');
+  });
+});
