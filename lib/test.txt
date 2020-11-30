@@ -1,0 +1,17 @@
+// Here follows some tests on the api requests to the spoonacular api
+// https://spoonacular.com/food-api
+const spoon = require('./spoonacular.js');
+
+const qs = spoon.makeQueryString(2, 'pasta', 20);
+console.log(qs);
+// eslint-disable-next-line prefer-arrow-callback
+spoon.makeGeneralQuery(qs, function (result) {
+  const data = result;
+  console.log(data);
+});
+
+// eslint-disable-next-line prefer-arrow-callback
+spoon.recipeInformation(715497, false, function (result) {
+  const data2 = result;
+  console.log('recipe', data2);
+});
