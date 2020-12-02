@@ -1,0 +1,227 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: normal;
+}
+
+html {
+    background: url(/public/images/vegbackground.png) no-repeat center fixed;
+    background-size: cover;
+    
+  }
+  body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+
+
+
+#welcomeScreen {
+    display: inline;
+}
+
+#loginScreen {
+    display: none;
+}
+
+#signupScreen {
+    display: none;
+}
+
+.sidecar-master {
+    display: flex;
+    max-height: 100vh;
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+  }
+  
+  .right {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: left;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+  }
+
+  .headers > h2 {
+      text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+  }
+  
+  .headers > h4 {
+      text-align: center;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(0,0,0,.4);
+  }
+  
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form> p {
+    text-align: right;
+  }
+  
+  .form > p > a {
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+  }
+  
+  .form-field:focus {
+    border-color: #0f7ef1;
+  }
+  
+.buttongroup {
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-right:15px;
+    text-align:center;
+    align-content:center;
+}
+
+  .sidecarbuttons {
+
+    min-width: 40% !important;
+    padding: 12px 10px;
+    border: 0;
+    font-size: larger;
+    background: linear-gradient(to right, #22e4ac 0%, #1bd7bb 100%); 
+    border-radius: 50px;
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .sidecarbuttons:hover {
+    font-size: 130%;
+    background: linear-gradient(to right, #22e4ac 100%, #1bd7bb 0%); 
+   
+}
+  
+  .animation {
+    animation-name: move;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+  
+  .a1 {
+    animation-delay: 1.s;
+  }
+  
+  .a2 {
+    animation-delay: 1.1s;
+  }
+  
+  .a3 {
+    animation-delay: 1.2s;
+  }
+  
+  .a4 {
+    animation-delay: 1.3s;
+  }
+  
+  .a5 {
+    animation-delay: 1.4s;
+  }
+  
+  .a6 {
+    animation-delay: 1.5s;
+  }
+
+  .a6 {
+    animation-delay: 1.6s;
+  }
+  
+  .a7 {
+    animation-delay: 1.7s;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-0px);
+    }
+  
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes left {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      padding: 20px 40px;
+      width: 600px;
+    }
+  }
+
+/*
+END SIDE BAR
+*/
+
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+ @media (max-width: 30em) {
+
+  .sidecar-master {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+        
+    }
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ *
