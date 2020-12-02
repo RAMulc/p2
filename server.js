@@ -17,7 +17,7 @@ const db = require('./models');
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(__dirname, +'/public'));
 
 // Set Handlebars
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
@@ -30,9 +30,14 @@ app.use(passport.session());
 
 // Requiring our routes
 require('./routes/api-routes.js')(app);
+require('./routes/ingredient-api-routes.js')(app);
+require('./routes/instruction-api-routes.js')(app);
+require('./routes/user-api-routes.js')(app);
+require('./routes/recipe-api-routes.js')(app);
+require('./routes/html-routes.js')(app);
 
 // Syncing our database and logging a message to the user upon success
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
   });
