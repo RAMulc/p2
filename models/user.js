@@ -1,73 +1,30 @@
-const crypto = require('crypto');
-
-module.exports = function (sequelize, DataTypes) {
+/* eslint-disable max-len */
+// Requiring bcrypt for password hashing. Using the bcryptjs version as the regular bcrypt module sometimes causes errors on Windows machines
+const bcrypt = require('bcryptjs');
+// Creating our User model
+module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    firstName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1],
-      },
-    },
-    surname: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1],
-      },
-    },
+    // The email cannot be null, and must be a proper email before creation
     email: {
       type: DataTypes.STRING,
-      unique: true,
       allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
     },
+    // The password cannot be null
     password: {
       type: DataTypes.STRING,
-      get() {
-        return () => this.getDataValue('password');
-      },
-    },
-    salt: {
-      type: DataTypes.STRING,
-      get() {
-        return () => this.getDataValue('salt');
-      },
+      allowNull: false,
     },
   });
-
-  // With thanks to https://medium.com/@benjaminpwagner/using-sequelize-hooks-and-crypto-to-encrypt-user-passwords-5cf1a27513d9
-
-  User.associate = function (models) {
-    User.hasMany(models.Recipe, { onDelete: 'cascade' });
-  };
-
-  User.generateSalt = function () {
-    return crypto.randomBytes(16).toString('base64');
-  };
-
-  User.encryptPassword = function (plainText, salt) {
-    return crypto
-      .createHash('RSA-SHA256')
-      .update(plainText)
-      .update(salt)
-      .digest('hex');
-  };
-
-  const setSaltAndPassword = (user) => {
-    if (user.changed('password')) {
-      // eslint-disable-next-line no-param-reassign
-      user.salt = User.generateSalt();
-      // eslint-disable-next-line no-param-reassign
-      user.password = User.encryptPassword(user.password(), user.salt());
-    }
-  };
-
-  User.beforeCreate(setSaltAndPassword);
-  User.beforeUpdate(setSaltAndPassword);
-
-  User.prototype.correctPassword = function (enteredPassword) {
-    return User.encryptPassword(enteredPassword, this.salt()) === this.password();
-  };
-
+  // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
+  User.prototype.validPassword = (password) => bcrypt.compareSync(password, this.password);
+  // Hooks are automatic methods that run during various phases of the User Model lifecycle
+  // In this case, before a User is created, we will automatically hash their password
+  User.addHook('beforeCreate', (user) => {
+    User.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
+  });
   return User;
 };
