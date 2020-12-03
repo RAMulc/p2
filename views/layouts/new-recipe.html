@@ -38,26 +38,36 @@
                 </li>
             </ul>
         </div>
-        <div class="container">
-        <div class="pure-u-3-5"><p>Add your own recipe</p></div>
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
 
         <form class="pure-form" method="POST">
             <fieldset>
-                <label for="recipe-name">Name of Your Recipe</label>
-                <input type="text" id="recipe-name" name="recipe-name" placeholder="Fettuccini Alfredo"/>
-                <label for="amount[0]">Amount</label>
-                <input type="text" id="amount0" name="a_level[+i][0]" placeholder="1/4, half"/>
-        
-                <label for="ingred[0]">Ingredient Name</label>
-                <input type="text" name="a_level[+i][2]" class="form-control ingredCol" id="ingred0" placeholder="flour, salt"/>
-                <label for="amount[0]">Amount</label>
-                <input type="text" id="amount0" name="a_level[+i][0]" placeholder="1/4, half"/>
+                        <div class="pure-g">
+                         <div class="pure-u-1 pure-u-md-1-3">
+                            <label for="multi-recipe-name">Recipe Name</label>
+                             <input type="text" id="multi-recipe-name" class="pure-u-23-24" />
+                            </div>
+    
+                                            <div class="pure-u-1 pure-u-md-1-3">
+                                                <label for="ingred[0]">Ingredient</label>
+                                                   <input type="text" name="a_level[+i][2]" class="pure-u-23-24 ingredCol" id="ingred0" placeholder="flour, salt"/ required="" />
+                                             </div>
+                            
+                                            <div class="pure-u-1 pure-u-md-1-3">
+                                             <label for="amount[0]">Amount</label>
+                                               <input type="text" id="amount0" name="a_level[+i][0]" class="pure-u-23-24" placeholder="1/4, half" />
+                                            </div>
+     
                 <label for="add-button">Add Item</label>
                 <button type="submit" class="pure-button pure-button-primary"id="addButton" onclick="createNewRow(event) "> Add </button>
-            
+                
+                 <div class="pure-u-1 pure-u-md-1-3">
                 <label for="instructions">Instructions</label>
                 <textarea type="text" id="instructions" placeholder="1. Mix dry and wet ingredients."></textarea>
                 <button type="submit" class="pure-button pure-button-primary" id="recipe-submit" >Submit</button>
+                 </div>
             </fieldset>
         </form>
     </div>
