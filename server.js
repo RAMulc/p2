@@ -32,7 +32,6 @@ app.use(passport.session());
 require('./routes/api-routes.js')(app);
 require('./routes/ingredient-api-routes.js')(app);
 require('./routes/instruction-api-routes.js')(app);
-require('./routes/user-api-routes.js')(app);
 require('./routes/recipe-api-routes.js')(app);
 require('./routes/html-routes.js')(app);
 
