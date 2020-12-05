@@ -47,7 +47,7 @@ padding-left: 10%;
 }
 
 .list-group-item.active {
-    background-color: #cb0afb !important;
+    background-color: #00b19099 !important;
     color: white !important;
 }
 
