@@ -26,9 +26,6 @@
                     <a class="pure-menu-link"href="./index.html">Home</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a class="pure-menu-link"href="./search.html">New Search</a>
-                </li>
-                <li class="pure-menu-item">
                     <a class="pure-menu-link" href="./recipes.html">My Recipes</a>
                 </li>
                 <li class="pure-menu-item">
@@ -36,27 +33,17 @@
                 </li>
             </ul>
         </div>
-        <div class = "container">
-        <div class="splash-container">
-            <div class="splash">
-                <h1 class="splash-head">Select the ingredients below that are in your fridge</h1>
-                <p>
-                    <a href=""><button type="button" class="pure-button pure-button-primary" id="searchBtn">Get My Recipes!</button></a>
-                </p>
-            </div>
-        </div>
+    
+    <div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Recipes that contain ingredients in your fridge!</h2>
 
-        
-        <div class="p-2 d-flex flex-wrap" id="Ingredient">
-            <!-- ingredients from database will get dumped here -->
+      <div class="container savedRecipes-container">
+            <!-- The saved recipes are Displayed Here -->
+            <div id="savedRecipes-display" id="recipes-Cards></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="p-5 d-flex flex-wrap" id="recipe">
-            <!-- recipes from database will get dumped here -->
-        </div>
-    </div>
-  </div>
+            </div>
+    
 </body>
 <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 <script src="./js/user.js" type="text/javascript"></script>

@@ -27,26 +27,42 @@
                     <a class="pure-menu-link"href="./index.html">Home</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a class="pure-menu-link"href="./search.html">New Search</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a class="pure-menu-link" href="./recipes.html">My Recipes</a>
+                    <a class="pure-menu-link" href="./savedRecipes.html">My Recipes</a>
                 </li>
                 <li class="pure-menu-item">
                     <a class="pure-menu-link" href="./new-recipe.html">Add A Recipe</a>
                 </li>
             </ul>
         </div>
-  <div class="container">
-    <div class="pure-g">
-        <div class="pure-u-3-5"><p><h1>The Movement that's Changing the Way We Eat</h1></p></div>
-        <div class="pure-u-3-5" id="search"><p>Search for ingredients you have on hand</p></div>
-        <div class="pure-u-3-5"a href="./search.html"><button class="button-success pure-button"id="homeBtn">Search Recipes</button></a></div>
+    
+        <div class="modal modal-recipe modal-fx-fadeInScale">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="columns is-vcentered p-0 m-0 fullheight">
+                <div class="column">
+                    <div id="apirecipe" class="apirecipe"><i
+                            class="fas fa-spinner fa-pulse"></i><br />Loading ...</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="pure-g">
-        <div class="pure-u-3-5"><p><h5>Add a new recipe to your collection</h5></p></div>
-        <div class="pure-u-3-5" a href="./new-recipe.html"><button class="button-success pure-button"id="homeBtn">Create Recipe</button></a></div>
+    
+    <div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">The Movement that's Changing the Way We Eat</h1>
+        <p class="splash-subhead">
+            Search for ingredients you have on hand
+        </p>
+        <p>
+            <a href="./search.html" class="pure-button pure-button-primary findRecipe" id="homeBtn" >Get Started</a>
+        </p>
+                <p>
+            <a href="./search.html" class="pure-button pure-button-primary" id="newRecipeBtn" >Create a Recipe</a>
+        </p>
+                <p>
+            <a href="./savedrecipe.html" class="pure-button pure-button-primary" id="savedRecipe" >Your saved recipes</a>
+        </p>
     </div>
+</div>
 </body>
 </html>
