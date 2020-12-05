@@ -1,16 +1,19 @@
+const { sequelize } = require('../models');
 const db = require('../models');
+
+
 
 module.exports = function (app) {
   app.get('/api/ingredients', (req, res) => {
     const query = {};
     if (req.query.recipe_id) {
-      query.RecipeId = req.query.recipe_id;
+      query.RecipeId = req.query.recipe_id;  
     }
-    db.Ingredient.findAll({
-      where: query,
-      include: [db.Recipe],
-    }).then((dbIngredient) => {
+    db.Ingredient.aggregate('Name','DISTINCT', {plain: false}) 
+    .then((dbIngredient) => {
       res.json(dbIngredient);
+      console.log(dbIngredient);
+      
     });
   });
 

@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(/public/images/vegbackground.png) no-repeat center fixed;
+    background: url(../images/vegbackground.png) no-repeat center fixed;
     background-size: cover;
     
   }
@@ -19,17 +19,7 @@ html {
 
 
 
-#welcomeScreen {
-    display: inline;
-}
 
-#loginScreen {
-    display: none;
-}
-
-#signupScreen {
-    display: none;
-}
 
 .sidecar-master {
     display: flex;
