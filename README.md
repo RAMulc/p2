@@ -12,7 +12,7 @@ An application to store a users recipes in an online database for easy searching
 [Usage](#Usage)
 
 <br>
-[Future Development](#Future Development)
+[Future_Development](#Future_Development)
 
 <br>
 ---------------
@@ -86,6 +86,6 @@ Run npm install to install the required packages.
 - Run 'node server.js' at the command line to start the program or [run from Heroku.](https://aqueous-anchorage-19621.herokuapp.com/)
 
 
-## Future Development
+## Future_Development
 
 - Watch this space....
