@@ -1,0 +1,38 @@
+id,stepNumber,details,createdAt,updatedAt,RecipeId
+1,1,"Remove the cauliflower's tough stem and reserve for another use.","2020-12-06 02:05:44","2020-12-06 02:05:44",1
+2,2,"Using a food processor, pulse cauliflower florets until they resemble rice or couscous.","2020-12-06 02:05:44","2020-12-06 02:05:44",1
+3,3,"You should end up with around four cups of cauliflower rice.","2020-12-06 02:05:44","2020-12-06 02:05:44",1
+4,6,"Sauté about a minute.","2020-12-06 02:05:45","2020-12-06 02:05:45",1
+5,4,"Heat 1T butter and 1T oil in a large skillet over medium heat.","2020-12-06 02:05:45","2020-12-06 02:05:45",1
+6,5,"Add garlic and the white and light green pieces of scallion.","2020-12-06 02:05:45","2020-12-06 02:05:45",1
+7,7,"Add the cauliflower to the pan.","2020-12-06 02:05:46","2020-12-06 02:05:46",1
+8,8,"Stir to coat with oil, then spread out in pan and let sit;","2020-12-06 02:05:46","2020-12-06 02:05:46",1
+9,9,"You want it cook a bit and to caramelize (get a bit brown), which will bring out the sweetness.","2020-12-06 02:05:47","2020-12-06 02:05:47",1
+10,10,"After a couple of minutes, stir and spread out again.","2020-12-06 02:05:47","2020-12-06 02:05:47",1
+11,11,"Add cold rice (it separates easily, so it won't clump up during cooking), plus the additional grapeseed and coconut oil or butter.","2020-12-06 02:05:47","2020-12-06 02:05:47",1
+12,12,"Raise heat to medium-high.","2020-12-06 02:05:47","2020-12-06 02:05:47",1
+13,13,"Toss everything together and, again, spread the mixture out over the whole pan and press a bit into the bottom.","2020-12-06 02:05:48","2020-12-06 02:05:48",1
+14,14,"Let it sit for about two minutes—so the rice can get toasted and a little crispy.","2020-12-06 02:05:48","2020-12-06 02:05:48",1
+15,15,"Add the peas and broccoli and stir again.","2020-12-06 02:05:48","2020-12-06 02:05:48",1
+16,16,"Drizzle soy sauce and toasted sesame oil over rice.","2020-12-06 02:05:49","2020-12-06 02:05:49",1
+17,17,"Cook for another minute or so and turn off heat.","2020-12-06 02:05:49","2020-12-06 02:05:49",1
+18,18,"Add chopped scallion tops and toss.","2020-12-06 02:05:49","2020-12-06 02:05:49",1
+19,19,"I like to toast some sesame seeds in a dry pan; I sprinkle these and some more raw, chopped scallion over the top of the rice for added flavor and crunch.","2020-12-06 02:05:50","2020-12-06 02:05:50",1
+20,20,"Season to taste with salt and, if you'd like, more soy sauce.","2020-12-06 02:05:50","2020-12-06 02:05:50",1
+21,21,"Keep in mind that if you're serving this with something salty and saucy (ie. teriyaki chicken) you may want to hold off on adding too much salt to the fried rice.","2020-12-06 02:05:51","2020-12-06 02:05:51",1
+22,1,"Peel the potatoes.","2020-12-06 02:05:51","2020-12-06 02:05:51",2
+23,2,"Mix ingredients.","2020-12-06 02:05:51","2020-12-06 02:05:51",2
+24,3,Cook.,"2020-12-06 02:05:52","2020-12-06 02:05:52",2
+25,1,"Take some yogurt in your favorite flavor and add 1 container to your blender.","2020-12-06 02:05:52","2020-12-06 02:05:52",3
+26,2,"Add in the berries, banana, and soy milk and blend.","2020-12-06 02:05:52","2020-12-06 02:05:52",3
+27,3,"Top your glass with a few graham cracker crumbs and serve.","2020-12-06 02:05:53","2020-12-06 02:05:53",3
+28,1,"Heat the olive oil in a large pot over medium heat.","2020-12-06 02:05:53","2020-12-06 02:05:53",4
+29,2,"Add the kale and cover.","2020-12-06 02:05:53","2020-12-06 02:05:53",4
+30,3,"Stir occasionally until the volume of the kale is reduced by half.","2020-12-06 02:05:54","2020-12-06 02:05:54",4
+31,4,Uncover.,"2020-12-06 02:05:54","2020-12-06 02:05:54",4
+32,5,"Add garlic and basalmic.","2020-12-06 02:05:54","2020-12-06 02:05:54",4
+33,6,"Allow to cook for about another 30 seconds or so, mixing well so that the garlic and vinegar are well distributed.","2020-12-06 02:05:54","2020-12-06 02:05:54",4
+34,7,"Serve hot.","2020-12-06 02:05:55","2020-12-06 02:05:55",4
+35,1,"Carefully add the ingredients into the slow cooker.","2020-12-06 02:05:55","2020-12-06 02:05:55",5
+36,2,"Cook for 4 hours.","2020-12-06 02:05:55","2020-12-06 02:05:55",5
+37,7,"Serve with a flagon of your finest ale.","2020-12-06 02:05:55","2020-12-06 02:05:55",4
