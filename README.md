@@ -12,7 +12,7 @@ An application to store a users recipes in an online database for easy searching
 [Usage](#Usage)
 
 <br>
-[Future_Development](#Future_Development)
+[FutureDevelopment](#FutureDevelopment)
 
 <br>
 ---------------
@@ -31,7 +31,7 @@ A simple application to store and search all your favourite recipes using MySQL,
 
 The app is deployed to Heroku and makes use of JawsDB for the backend database.
 
-Storage is online with JawsDB and allows the user to search all their stored recipes by ingredient and/or preparation time. There is also the facility to search online for something new via the "spoonacular api". An option to save a new recipe to the users favourites is presented for new recipes.
+Storage is online with JawsDB and allows the user to search all their stored recipes by ingredient. An option to save a new recipe to the users favourites is presented for new recipes.
 
 ***Welcome Page***
 
@@ -53,25 +53,25 @@ New users are requested to signup to make use of the application. A unique email
 
 ***Search***
 
-To search for a particular recipe, enter any combination of "title", "ingredient", or "prep time". As an option the user may select to search the "spoonacular api" to receive results not stored in the users personal database.
-
-TODO: add Image
+To search for a particular recipe, enter an "ingredient". 
 
 ![Signup](https://github.com/RAMulc/p2/blob/main/assets/img/Search.png)
 
 ***Results***
 
-The user is presented with the results of the search from the "title", "ingredient", or "prep time" categories. 
-
-TODO: add Image
+The user is presented with the results of the search from the selected "ingredient". 
 
 ![Signup](https://github.com/RAMulc/p2/blob/main/assets/img/Results.png)
+
+***View Recipe***
+
+Click the "Cook Me" button next to the selected recipe to view your recipe in detail. 
+
+![Signup](https://github.com/RAMulc/p2/blob/main/assets/img/SelectedRecipe.png)
 
 ***Add a Recipe***
 
 Fill in all the fields to manually enter a recipe. This is added to the database for future use.
-
-TODO: add image
 
 ![Signup](https://github.com/RAMulc/p2/blob/main/assets/img/addRecipe.png)
 
@@ -86,6 +86,7 @@ Run npm install to install the required packages.
 - Run 'node server.js' at the command line to start the program or [run from Heroku.](https://aqueous-anchorage-19621.herokuapp.com/)
 
 
-## Future_Development
+## FutureDevelopment
 
-- Watch this space....
+- As an option the user may select to search the "spoonacular api" to receive results not stored in the users personal database. 
+
