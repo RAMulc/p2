@@ -13,6 +13,26 @@
     display: none
 }
 
+.sidecarbuttons {
+
+    min-width: 20% !important;
+    padding: 12px 10px;
+    border: 0;
+    font-size: larger;
+    background: linear-gradient(to right, #22e4ac 0%, #1bd7bb 100%); 
+    border-radius: 50px;
+    margin-top: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .sidecarbuttons:hover {
+    font-size: 130%;
+    background: linear-gradient(to right, #22e4ac 100%, #1bd7bb 0%); 
+   
+}
+
 body {
     background-color: #f1f4f5 !important;
 }

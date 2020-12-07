@@ -162,7 +162,7 @@ html {
   .sidecarbuttons {
 
     min-width: 40% !important;
-    padding: 12px 10px;
+    padding: 5px 5px;
     border: 0;
     font-size: larger;
     background: linear-gradient(to right, #22e4ac 0%, #1bd7bb 100%); 
