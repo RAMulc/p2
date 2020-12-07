@@ -1,0 +1,85 @@
+<h1>New Recipe</h1></br>
+<form id="newRecipeForm">
+    <div class="form-group row">
+        <label for="newrecipeTitle" class="col-sm-2 col-form-label">Recipe Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="newrecipeTitle">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="newprepTime" class="col-sm-2 col-form-label">Prep Time</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="newprepTime" placeholder="minutes">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="newcookTime" class="col-sm-2 col-form-label">Cooking Time</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" id="newcookTime" placeholder="minutes">
+        </div>
+    </div>
+    <div class="form-row">
+
+        <h1 class="col-form-label col-sm-2 pt-3">Ingredients</h1>
+    </div>
+
+    <div class="form-row pt-3">
+        <div class="form-group col-md-2">
+            <input type="text" class="form-control" id="quantity-input" placeholder="Quantity - e.g 1cup, 25ml, 1.5kg">
+        </div>
+        <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="ingredient-input" placeholder="Ingredient">
+        </div>
+        <div class="form-group col-md-2">
+            <input type="button" id="addNewIngredient" class=" form-control btn btn-success" value="Add Ingredient">
+        </div>
+    </div>
+    <div class="form-row pt-3">
+        <div class="form-group col-md-6">
+            <input type="hidden" id="ingredientRowNum" value="1">
+            <table id="ingredientsList" class="table table-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Ingredient</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-row">
+
+        <h1 class="col-form-label col-sm-2 pt-3">Steps</h1>
+    </div>
+
+    <div class="form-row pt-3">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="step-input" placeholder="Step">
+        </div>
+        <div class="form-group col-md-2">
+            <input type="button" id="addNewStep" class=" form-control btn btn-success" value="Add Step">
+        </div>
+    </div>
+    <div class="form-row pt-3">
+        <div class="form-group col-md-6">
+            <input type="hidden" id="stepRowNum" value="1">
+            <table id="stepsList" class="table table-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Steps</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-group col-md-3 pt-3">
+<input type="submit" id="saveNewRecipe" class=" form-control btn btn-success" value="Save Recipe">
+</div>
+</form>

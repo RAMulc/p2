@@ -5,6 +5,14 @@
     letter-spacing: normal;
 }
 
+#addrecipeScreen {
+    display: none;
+}
+
+#cookmeScreen {
+    display: none
+}
+
 body {
     background-color: #f1f4f5 !important;
 }
