@@ -107,12 +107,13 @@ console.log(stepData);
                 RecipeId: recipe.id,
             })  
         }
+        location.reload();
     })
             
 
           
         })
-     location.reload();
+     
   };
 
 });

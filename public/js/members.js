@@ -34,6 +34,7 @@ $(document).ready(function () {
 
   function addRecipeScreen() {
     $('#homeScreen').css('display', 'none');
+    $('#cookmeScreen').css('display', 'none');
     $('#homeButton').removeClass('active');
     $('#addrecipeScreen').css('display', 'inline');
     $('#addRecipeButton').addClass('active');
