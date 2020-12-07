@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(/public/images/vegbackground.png) no-repeat center fixed;
+    background: url(../images/vegbackground.png) no-repeat center fixed;
     background-size: cover;
     
   }
@@ -59,7 +59,7 @@ html {
     opacity: 0.8;
 }
 
-/* for form page
+/* for form page/*/
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
@@ -76,24 +76,8 @@ html {
     padding: 1em 1em 3em;
 }
 
-/* This is the class used for the main content headers (<h2>) */
-.content-head {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 2em 0 1em;
-}
-#welcomeScreen {
-    display: inline;
-}
 
-#loginScreen {
-    display: none;
-}
 
-#signupScreen {
-    display: none;
-}
 
 .sidecar-master {
     display: flex;
@@ -178,7 +162,7 @@ html {
   .sidecarbuttons {
 
     min-width: 40% !important;
-    padding: 12px 10px;
+    padding: 5px 5px;
     border: 0;
     font-size: larger;
     background: linear-gradient(to right, #22e4ac 0%, #1bd7bb 100%); 
