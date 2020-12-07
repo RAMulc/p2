@@ -30,7 +30,7 @@ $(document).ready(function () {
           var recipetitle = recipe.title;
           var preptime = recipe.preptime;
           var cooktime = recipe.cooktime;
-          var button = "<button id='"+id+"' class='btn cookmebtn'>Cook Me</button>"
+          var button = "<button id='"+id+"' class='btn cookMeButton'>Cook Me</button>"
           var markup = "<tr id='"+id+"'><td>" + recipetitle + "</td><td>" + cooktime + "</td><td>" + preptime + "</td><td>"+button+"</td>"
           $("#recipeListCollection").append(markup);
           console.log(recipe);
