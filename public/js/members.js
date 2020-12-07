@@ -4,8 +4,8 @@ $(document).ready(function () {
   $("#recipeListCollection").on("click", ".cookMeButton", getCooking);
   $(document).on('click', '#addRecipeButton', addRecipeScreen);
   $(document).on('click', '#homeButton', homeScreen);
-  
 
+  
 
   function getCooking() {
     console.log(this.id);
@@ -34,7 +34,10 @@ $(document).ready(function () {
 
   function addRecipeScreen() {
     $('#homeScreen').css('display', 'none');
+    $('#homeButton').removeClass('active');
     $('#addrecipeScreen').css('display', 'inline');
+    $('#addRecipeButton').addClass('active');
+
   };
 
   function homeScreen() {
