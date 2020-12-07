@@ -2,7 +2,9 @@
 // https://spoonacular.com/food-api
 const spoon = require('./spoonacular.js');
 
-const qs = spoon.makeQueryString(2, 'pasta', 20);
+// const qs = spoon.makeQueryString(2, 'pasta', 20);
+const qs = spoon.makeIngredientQueryString(5, 'Cauliflower');
+
 console.log(qs);
 // eslint-disable-next-line prefer-arrow-callback
 spoon.makeGeneralQuery(qs, function (result) {
