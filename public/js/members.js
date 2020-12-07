@@ -4,8 +4,9 @@ $(document).ready(function () {
   $("#recipeListCollection").on("click", ".cookMeButton", getCooking);
   $(document).on('click', '#addRecipeButton', addRecipeScreen);
   $(document).on('click', '#homeButton', homeScreen);
-  
+  $(document).on('click', '#modalLogoutButton', logoutScreen);
 
+  
 
   function getCooking() {
     console.log(this.id);
@@ -34,7 +35,11 @@ $(document).ready(function () {
 
   function addRecipeScreen() {
     $('#homeScreen').css('display', 'none');
+    $('#cookmeScreen').css('display', 'none');
+    $('#homeButton').removeClass('active');
     $('#addrecipeScreen').css('display', 'inline');
+    $('#addRecipeButton').addClass('active');
+
   };
 
   function homeScreen() {
@@ -47,6 +52,11 @@ location.reload();
   });
 
 
+  function logoutScreen(){
+    $.get('/logout').then(function(data){
+     location.reload();
+    })
+  }
 
 
 });
