@@ -4,6 +4,7 @@ $(document).ready(function () {
   $("#recipeListCollection").on("click", ".cookMeButton", getCooking);
   $(document).on('click', '#addRecipeButton', addRecipeScreen);
   $(document).on('click', '#homeButton', homeScreen);
+  $(document).on('click', '#modalLogoutButton', logoutScreen);
 
   
 
@@ -51,6 +52,11 @@ location.reload();
   });
 
 
+  function logoutScreen(){
+    $.get('/logout').then(function(data){
+     location.reload();
+    })
+  }
 
 
 });
