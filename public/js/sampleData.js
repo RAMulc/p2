@@ -81,7 +81,7 @@ function makeRecipes(recipes) {
     instructions.forEach(instruction => {
       $.post("/api/instructions", {
         stepNumber: instruction[0],
-        Details: instruction[1],
+        details: instruction[1],
         RecipeId: instruction[2]
       });
     });
